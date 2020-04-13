@@ -1,0 +1,42 @@
+@import "normalize";
+
+:root, .cv-dark {
+  --cv-background: #282a36;
+  --cv-current-line: #44475a;
+  --cv-selection: rgba(128,203,196,0.25);
+  --cv-foreground: #f8f8f2;
+  --cv-comment: 6272a4;
+  --cv-cyan: #8be9fd;
+  --cv-green: 50fa7b;
+  --cv-orange: #ffb86c;
+  --cv-pink: #ff79c6;
+  --cv-purple: #bd93f9;
+  --cv-red: #ff5555;
+  --cv-yellow: #f1fa8c;
+}
+
+.cv-light {
+
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background: var(--cv-background);
+  color: var(--cv-foreground);
+}
+
+::selection {
+  background: var(--cv-selection);
+}
+
+.header {
+  color: red;
+}
+
+.content {
+
+}
+
+.footer {
+
+}

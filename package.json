@@ -1,0 +1,25 @@
+{
+  "name": "yaroslav.uz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.3.4",
+    "ramda": "^0.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@types/react": "^16.9.34",
+    "@zeit/next-sass": "^1.0.1",
+    "node-sass": "^4.13.1",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  }
+}
