@@ -1,4 +1,3 @@
-# cv
-CV
+# CV
 
 https://yaroslav.uz
