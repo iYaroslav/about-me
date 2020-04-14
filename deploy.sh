@@ -5,7 +5,7 @@ if [[ -z "$(git status --untracked-files=no --porcelain)" ]]; then
   yarn publish --new-version ${version} --registry https://npm.leerybit.uz
   git push
   git push --tags
-  now
+  now --prod
 else
   echo 'Commit changes before deploy!'
 fi

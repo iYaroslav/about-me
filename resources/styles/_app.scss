@@ -1,4 +1,4 @@
-@import "normalize";
+@import "avatar";
 
 :root, .dark {
   --background: #2B2B2B;
@@ -19,7 +19,6 @@
 }
 
 .light {
-
 }
 
 html {
@@ -47,6 +46,10 @@ body {
   word-break: keep-all;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -65,7 +68,7 @@ section {
 }
 
 article {
-  width: 100%;
+  max-width: 50rem;
 }
 
 h1, h3, p {
