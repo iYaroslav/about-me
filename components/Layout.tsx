@@ -1,20 +1,5 @@
-import Link from 'next/link'
-import Head from 'next/head'
-
-import '../styles/layout.scss'
-
-export default ({
-  children,
-  title = 'CV - Yaroslav Samardak',
-  page = 'index'
-}) => (
+export default ({ children }) => (
   <main>
-    <Head>
-      <title>{ title }</title>
-      <meta charSet="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    </Head>
     {/*<aside>*/}
     {/*  <nav>*/}
     {/*    <Link href="/">*/}
