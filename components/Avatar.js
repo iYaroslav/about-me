@@ -1,7 +1,12 @@
+import Img from "./Img"
+
 const Avatar = () => <div className='avatar'>
-  <img
+  <Img
     alt='Yaroslav Samardak'
-    src={require('../resources/images/avatar.jpg')}
+    src={'avatar_kdi0ti.jpg'}
+    flags={['c_thumb', 'g_face']}
+    ratio='1:1'
+    size={160}
   />
 </div>
 
