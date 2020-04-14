@@ -1,32 +1,107 @@
 @import "normalize";
 
-:root, .cv-dark {
-  --cv-background: #282a36;
-  --cv-current-line: #44475a;
-  --cv-selection: rgba(128,203,196,0.25);
-  --cv-foreground: #f8f8f2;
-  --cv-comment: 6272a4;
-  --cv-cyan: #8be9fd;
-  --cv-green: 50fa7b;
-  --cv-orange: #ffb86c;
-  --cv-pink: #ff79c6;
-  --cv-purple: #bd93f9;
-  --cv-red: #ff5555;
-  --cv-yellow: #f1fa8c;
+:root, .dark {
+  --background: #2B2B2B;
+  --foreground: #A9B7C6;
+  --current: #44475a;
+  --selection: #305D78;
+
+  --red: #FF6B68;
+  --green: #A8C023;
+  --yellow: #D6BF55;
+  --blue: #5394EC;
+  --magenta: #AE8ABE;
+  --cyan: #299999;
+  --gray: #999999;
+  --dark-gray: #555555;
+  --link: #287BDE;
+  --link-active: #589DF6;
 }
 
-.cv-light {
+.light {
 
+}
+
+html {
+  font-size: 1.8vmin;
+  text-rendering: optimizeSpeed;
+  display: table;
 }
 
 body {
+  font-size: 2em;
+  font-weight: 300;
+  cursor: default;
   font-family: 'Fira Code', monospace;
-  background: var(--cv-background);
-  color: var(--cv-foreground);
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  user-modify: read-only;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-drag: none;
+  box-sizing: border-box;
+  display: table-cell;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+article {
+  width: 100%;
+}
+
+h1, h3, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a, a:visited {
+  color: var(--link);
+
+  &:hover, &:focus {
+    color: var(--link-active)
+  }
+}
+
+.red { color: var(--red) }
+.green { color: var(--green) }
+.yellow { color: var(--yellow) }
+.blue { color: var(--blue) }
+.magenta { color: var(--magenta) }
+.cyan { color: var(--cyan) }
+.gray { color: var(--gray) }
+.dark-gray { color: var(--dark-gray) }
+
+.comment {
+  font-style: italic;
+  color: var(--comment);
+
+  &:before {
+    content: '// ';
+  }
 }
 
 ::selection {
-  background: var(--cv-selection);
+  background: var(--selection);
 }
 
 .header {
