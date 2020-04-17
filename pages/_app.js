@@ -19,7 +19,10 @@ const App = ({Component, pageProps}) => {
       <link rel="manifest" href="/manifest.json" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
+    <div /> {/* Fix margins */}
+    <div className='foreground' />
     <Component css={css} {...pageProps} />
+    <div /> {/* Fix margins */}
   </>
 }
 

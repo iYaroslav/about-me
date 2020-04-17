@@ -11,6 +11,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "class-names": "^1.0.0",
     "firebase": "^7.14.0",
     "get-age": "^1.0.1",
     "qs": "^6.9.3",

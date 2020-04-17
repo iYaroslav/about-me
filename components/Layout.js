@@ -1,5 +1,6 @@
 export default ({ children }) => (
   <main>
+    {/*<header>Header</header>*/}
     {/*<aside>*/}
     {/*  <nav>*/}
     {/*    <Link href="/">*/}
