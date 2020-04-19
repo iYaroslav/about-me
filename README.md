@@ -1,3 +1,3 @@
-# CV
+# About me
 
 https://yaroslav.uz
