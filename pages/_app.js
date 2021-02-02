@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
+import {useEffect} from 'react'
 import Head from "next/head"
-import { analytics } from '../components/firebase'
+import {analytics} from '../components/firebase'
 import useFont from "../hooks/useFont"
 import css from "../styles/_app.scss"
 
@@ -15,14 +15,16 @@ const App = ({Component, pageProps}) => {
     <Head>
       <title>Yaroslav Samardak</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta name="cloudinary_cloud_name" content="iyaroslav" />
-      <link rel="manifest" href="/manifest.json" />
+      <meta name="cloudinary_cloud_name" content="iyaroslav"/>
+      <link rel="manifest" href="/manifest.json"/>
       <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <div /> {/* Fix margins */}
-    <div className='foreground' />
+    <div/>
+    {/* Fix margins */}
+    <div className='foreground'/>
     <Component css={css} {...pageProps} />
-    <div /> {/* Fix margins */}
+    <div/>
+    {/* Fix margins */}
   </>
 }
 
